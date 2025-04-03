@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      {/* batva */}
+      {/* ba */}
       <main>
         <HeroSection />
         <ServicesSection />
