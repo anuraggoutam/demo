@@ -12,7 +12,7 @@ const ContactSection = () => {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  // hjh
+  //
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -27,8 +27,7 @@ const ContactSection = () => {
 
     // Simulate form submission
     setTimeout(() => {
-      toast({
-        title: 'Message sent!',
+      toast('Message sent!', {
         description: "We'll get back to you as soon as possible.",
       });
 
