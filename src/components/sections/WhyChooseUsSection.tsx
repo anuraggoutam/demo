@@ -59,7 +59,7 @@ const WhyChooseUsSection = () => {
               Here&apos;s why clients choose us for their digital needs
             </p>
             <p className="text-company-gray mb-8">
-              We're dedicated to helping businesses grow and succeed. Our
+              We&apos;re dedicated to helping businesses grow and succeed. Our
               approach combines industry expertise, innovative thinking, and a
               commitment to delivering measurable results.
             </p>
