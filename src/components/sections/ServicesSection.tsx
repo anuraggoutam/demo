@@ -72,7 +72,7 @@ const ServicesSection = () => {
           <div className="w-24 h-1 bg-company-red mx-auto mb-6"></div>
           <p className="text-company-gray max-w-2xl mx-auto">
             We offer a comprehensive suite of services designed to help your
-            business succeed in today's competitive landscape.
+            business succeed in today&apos;s competitive landscape.
           </p>
         </div>
 

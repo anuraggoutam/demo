@@ -118,8 +118,8 @@ const TestimonialsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-company-red mx-auto mb-6"></div>
           <p className="text-company-gray max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say
-            about their experience working with us.
+            Don&apos;t just take our word for it. Here&apos;s what our clients
+            have to say about their experience working with us.
           </p>
         </div>
 
