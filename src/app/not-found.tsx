@@ -1,29 +1,37 @@
 'use client';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
 
-const NotFound = () => {
-  const router = useRouter();
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+
+export default function NotFound() {
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    console.error(
-      '404 Error: User attempted to access non-existent route:',
-      router.asPath
-    );
-  }, [router.asPath]);
+    setIsMounted(true);
+  }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <Link href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </Link>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow flex items-center justify-center">
+        <div className="text-center px-4 py-16">
+          <h1 className="text-4xl font-bold mb-4">404 - Page Not Found</h1>
+          <p className="text-lg mb-8">
+            Sorry, the page you are looking for does not exist.
+          </p>
+          {isMounted && (
+            <Link
+              href="/"
+              className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+            >
+              Return to Home
+            </Link>
+          )}
+        </div>
+      </main>
+      <Footer />
     </div>
   );
-};
-
-export default NotFound;
+}
